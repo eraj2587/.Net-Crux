@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <script>
+
+        var myclass = {
+            a: 10,
+            b: 'Rajaram',
+            callMe:function() {
+                console.log('I m class call');
+            }
+        };
+
+        console.log('a : ' + myclass.a);
+        delete myclass.b; //delete property
+        console.log('b : ' + myclass.b);
+        myclass.b = 20; //add property again
+        console.log('b : ' + myclass.b);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

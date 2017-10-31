@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <script>
+        //self invocation function
+        (function add(a,b) {
+            console.log('sum is '+ (a+b));
+        })(10,5);
+
+
+        //function closure
+       var closure= (function () {
+            var a = 10;
+            return {
+                callme: function() {
+                    console.log('inside closure '+a);
+                }
+            };
+        })();
+
+
+       console.log('outside a ' +closure.a);
+        closure.callme();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

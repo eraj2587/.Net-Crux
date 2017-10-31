@@ -1,0 +1,57 @@
+﻿@model FormAuth.Models.Product
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    <h4>Product</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+       
+    </dl>
+    
+    <div id="mydiv">
+        @*@{ Html.RenderPartial("About");}*@
+        
+        @*@Html.Partial("About")*@
+        
+        @*@Html.Action("About")*@
+        
+        @*@{Html.RenderAction("About");}*@
+
+    </div>
+    
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url:'@Url.Action("About","Home")',
+                type: 'GET',
+                dataType: 'html',
+                success: function (data) {
+                    $('#mydiv').html(data);
+                }
+            });
+        });
+
+
+    </script>
+
+</div>

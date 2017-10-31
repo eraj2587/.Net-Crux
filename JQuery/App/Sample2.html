@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+    <body>
+        <div id="testdiv"></div>
+        <script src="../Scripts/jquery-3.1.1.min.js"></script>
+        <script src="../Scripts/bootstrap.min.js"></script>
+        <script>
+            
+            $(document).ready(function() {
+                var a = [14, 6, 3, 8, 1];
+                //DIFFERENCE BETWEEN EACH LOOPS
+                var res = 'In $.each loop</br>';
+                //can call on all type of object collection
+                $.each(a, function (key, data) {
+                    res += key.toString() + '...' + data.toString() + '</br>';
+                });
+                res += 'In $().each loop</br>';
+                //can call only on jquery objects only
+                $(a).each(function(key,data)
+                {
+                    res += key.toString() + '...' + data.toString() + '</br>';
+                });
+                //result is same
+                $('#testdiv').html(res);
+
+
+
+
+            });
+
+        </script>
+
+    </body>
+</html>

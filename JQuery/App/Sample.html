@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+    <body>
+        <div></div>
+        <button id="btnclick">Click</button>
+        <script src="../Scripts/jquery-3.1.1.min.js"></script>
+        <script src="../Scripts/bootstrap.min.js"></script>
+        <script>
+            //assign jquery to different variable
+            var JQ = $.noConflict(); // JQ=jQuery.noConflict();
+            //Initialize with new variable  
+            JQ(document).ready(function () {
+               JQ('#btnclick').on('click', function () {
+                   JQ(this).prev().html("I am clicked");
+                });
+
+            });
+
+        </script>
+
+    </body>
+</html>

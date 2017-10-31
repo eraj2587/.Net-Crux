@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+    <body>
+        <div>
+            <ul>
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+                <li>list item 4</li>
+                <li>list item 5</li>
+            </ul>
+        </div>
+        <script src="../Scripts/jquery-3.1.1.min.js"></script>
+        <script src="../Scripts/bootstrap.min.js"></script>
+        <script>
+            //eq() returns the element as a jQuery object. This method constructs a new jQuery object from one element within that set and returns it.
+            //That means that you can use jQuery functions on it.
+            //get() return a DOM element. The method retrieve the DOM elements matched by the jQuery object. 
+            //But as it is a DOM element and it is not a jQuery-wrapped object. So jQuery functions can't be used. 
+            $(document).ready(function () {
+               var a= $('li').eq(2).css('background-color', 'red'); //Works
+                $('li').get(1).css('background-color', 'red'); // Error. Object #<HTMLLIElement> has no method 'css' 
+
+
+
+
+            });
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+    <body onload="bodyLoaded();">
+        <div>
+            <img src="../Content/Images/Desert.jpg" />
+        </div>
+        <button id="btnclick">Click</button>
+        <script src="../Scripts/jquery-3.1.1.min.js"></script>
+        <script src="../Scripts/bootstrap.min.js"></script>
+        <script>
+            function bodyLoaded() {
+                alert('body loaded');   
+            }
+            //TODO :
+            //<body onload= and window.onload are same
+            //window.onload calls after the document.ready
+            //TODO : 
+
+
+            //window.onload = function() {
+            //    alert('window loaded');
+            //};
+            //assign jquery to different variable
+            var JQ = $.noConflict(); // JQ=jQuery.noConflict();
+            //Initialize with new variable  
+            JQ(document).ready(function () {
+                alert('document ready');
+                JQ('#btnclick').on('click', function () {
+                    JQ(this).prev().html("I am clicked");
+                });
+
+            });
+
+        </script>
+
+    </body>
+</html>
