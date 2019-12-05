@@ -85,13 +85,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ReadMe.txt" />
-    <Content Include="SampleData.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SampleData_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>SampleData.mdf</DependentUpon>
-    </Content>
     <Content Include="SqlScripts\DropTables.sql" />
     <Content Include="SqlScripts\AddGenderColumn.sql" />
   </ItemGroup>

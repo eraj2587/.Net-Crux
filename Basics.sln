@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2036
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basics.LinqBase", "LinqBase\Basics.LinqBase.csproj", "{76A73977-F2B6-4928-BD2B-3CA16AB0A7AD}"
 EndProject
@@ -45,6 +45,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuncAction", "FuncAction\FuncAction.csproj", "{FD01A0EB-5F1F-4791-AC2D-96CE7E369F61}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryManagement", "MemoryManagement\MemoryManagement.csproj", "{5212C5FF-552B-4EAC-B0DC-FA647E35D87D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonClassUsage", "SingletonClassUsage\SingletonClassUsage.csproj", "{EAE6A3EF-BC79-486F-B942-D9A252E36301}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -128,6 +130,10 @@ Global
 		{5212C5FF-552B-4EAC-B0DC-FA647E35D87D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5212C5FF-552B-4EAC-B0DC-FA647E35D87D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5212C5FF-552B-4EAC-B0DC-FA647E35D87D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAE6A3EF-BC79-486F-B942-D9A252E36301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAE6A3EF-BC79-486F-B942-D9A252E36301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAE6A3EF-BC79-486F-B942-D9A252E36301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAE6A3EF-BC79-486F-B942-D9A252E36301}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
